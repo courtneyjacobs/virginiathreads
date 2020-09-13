@@ -39,8 +39,8 @@
 
   <div class="container py-3">
     <div class="row">
-      <div class="col-5">
-        <div class="card">
+<!--       <div class="col-5">
+ -->        <div class="card" style="width: 50%">
           <img class="card-img-top" src="https://storage.googleapis.com/virginia-threads-project.appspot.com/assets/comingsoon.png" alt="Coming soon">
           <div class="card-body">
             <h4 class="card-title">Classic Scarf in Blue/Orange</h4>
@@ -48,15 +48,43 @@
             <p class="card-text">Size: One size</p>
             <p class="card-text">Materials: 50% merino wool, 50% acrylic</p>
             <p class="card-text">Care instructions: Machine wash delicate, hand wash preferred. Lay flat to dry.</p>
+            <!-- Paypal Buy Now buttons -->
+            <div id="paypal-button-container"></div>
+            <script src="https://www.paypal.com/sdk/js?client-id=Af1_8Q9-p6DmB4AqWdxM2OzaHS-6D1LGzWJvmq0_iZ249goQH9T24LYyxIpXPXMbbXQ-J6tUyLMVotHz&currency=USD" data-sdk-integration-source="button-factory"></script>
+            <script>
+              paypal.Buttons({
+                  style: {
+                      shape: 'rect',
+                      color: 'gold',
+                      layout: 'vertical',
+                      label: 'buynow',
+                      
+                  },
+                  createOrder: function(data, actions) {
+                      return actions.order.create({
+                          purchase_units: [{
+                              amount: {
+                                  value: '34.99'
+                              }
+                          }]
+                      });
+                  },
+                  onApprove: function(data, actions) {
+                      return actions.order.capture().then(function(details) {
+                          alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                      });
+                  }
+              }).render('#paypal-button-container');
+            </script>
           </div>
         </div>
       </div>
-      <div class="col-7">
+      <!-- <div class="col-7">
         <div class="card" >
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf1Ofn7XkS3XBdcMFNNg0Qyyb5uIBbuI_UxY74xWuZeC8OQ5Q/viewform?embedded=true" height="765px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
   <br><br><br>
 
