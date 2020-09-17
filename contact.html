@@ -7,6 +7,17 @@
   <title>Contact | Virginia Threads Project</title>
 
   <style type="text/css">
+    footer div a, footer div p {
+      color: white;
+      opacity: .5
+    }
+    a {
+      color: navy;
+    }
+    a:hover {
+      color: orange;
+      text-decoration: none;
+    }
     html,
     body {
       margin:0;
@@ -18,7 +29,7 @@
       position:relative;
     }
     #header {
-      background:#ff0;
+      background: #000033 !important;
       padding:10px;
     }
     #body {
@@ -30,7 +41,7 @@
       bottom:0;
       width:100%;
       height:110px;      /* Height of the footer */
-      background:#6cf;
+      background: #000033 !important;
     }
   </style>
 </head>
@@ -38,15 +49,18 @@
 <body>
 
   <div id="container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-       <a class="navbar-brand" href="/">Virginia Threads Project</a>
-	     <img src="https://i.groupme.com/1500x1380.jpeg.589fa1e3d28c46d39206a97c6aa5d1b3" alt="">
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="header">
+       <a class="navbar-brand" href="/">
+          <div style="display: flex; align-items: center">
+            <img src="https://i.groupme.com/1500x1380.jpeg.589fa1e3d28c46d39206a97c6aa5d1b3" alt="" height="60px" width="60px">
+            <p style="margin: 10px; font-family: optima; font-variant: small-caps;">Virginia Threads Project</p>
+          </div>
+      </a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
        </button>
        <div class="collapse navbar-collapse" id="navbarNav">
-         <ul class="navbar-nav">
+         <ul class="navbar-nav navbar-right">
            <li class="nav-item">
              <a class="nav-link" href="/">Home</a>
            </li>
@@ -56,7 +70,7 @@
            <li class="nav-item">
              <a class="nav-link" href="about">Who We Are</a>
            </li>
-	   <li class="nav-item">
+	         <li class="nav-item">
              <a class="nav-link active" href="contact">Contact</a>
            </li> 
            <!--
@@ -69,27 +83,27 @@
      </nav>
 
     <div id="body" class="container py-3">
-      <h1>Welcome to the Virginia Threads Project!</h1>
-      <div class="my-3">
-        <h4>Follow us on Instagram:</h4>
-        <a href="https://instagram.com/virginiathreads">@virginiathreads</a>
-      </div>
-      <div class="my-3">
-        <h4>General information:</h4>
-        <a href="mailto:info@virginiathreadsproject.com">info@virginiathreadsproject.com</a>
-      </div>
-      <div class="my-3">
-        <h4>Technical support or suggestions for this website:</h4>
-        <a href="mailto:webmaster@virginiathreadsproject.com">webmaster@virginiathreadsproject.com</a>
-      </div>
-      <div class="my-3">
-        <h4>Product returns and customer assistance:</h4>
-        <a href="mailto:help@virginiathreadsproject.com">help@virginiathreadsproject.com</a>
-      </div>
-      <div class="my-3">
-        <h4>Partner with us or become a reseller:</h4>
-        <a href="mailto:partner@virginiathreadsproject.com">partner@virginiathreadsproject.com</a>
-      </div>
+      <h3 style="font-family: optima;">Contact Us</h3>
+        <div class="my-4">
+          <h6>Follow us on Instagram:</h6>
+          <a href="https://instagram.com/virginiathreads">@virginiathreads</a>
+        </div>
+        <div class="my-4">
+          <h6>General information:</h6>
+          <a href="mailto:info@virginiathreadsproject.com">info@virginiathreadsproject.com</a>
+        </div>
+        <div class="my-4">
+          <h6>Technical support or suggestions for this website:</h6>
+          <a href="mailto:webmaster@virginiathreadsproject.com">webmaster@virginiathreadsproject.com</a>
+        </div>
+        <div class="my-4">
+          <h6>Product returns and customer assistance:</h6>
+          <a href="mailto:help@virginiathreadsproject.com">help@virginiathreadsproject.com</a>
+        </div>
+        <div class="my-4">
+          <h6>Partner with us or become a reseller:</h6>
+          <a href="mailto:partner@virginiathreadsproject.com">partner@virginiathreadsproject.com</a>
+        </div>
     </div>
 
        <footer id="footer" class="container-fluid bg-dark">
