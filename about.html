@@ -7,6 +7,25 @@
   <title>Who We Are | Virginia Threads Project</title>
 
   <style type="text/css">
+    a {
+      color: navy;
+    }
+    a:hover {
+      color: orange;
+      text-decoration: none;
+    }
+    footer div a, footer div p {
+      color: white;
+      opacity: .5
+    }
+    footer div a:hover {
+      color: white;
+      opacity: .9;
+    }
+    footer div p:hover {
+      color: white;
+      opacity: .7;
+    }
     html,
     body {
       margin:0;
@@ -39,9 +58,12 @@
 
   <div id="container">
     <nav class="navbar navbar-expand-lg navbar-dark" id="header">
-       <a class="navbar-brand" href="/">Virginia Threads Project</a>
-	    <img src="https://i.groupme.com/1500x1380.jpeg.589fa1e3d28c46d39206a97c6aa5d1b3" alt="" height= "100px" width="100px">
-        </a>
+      <a class="navbar-brand" href="/">
+         <div style="display: flex; align-items: center">
+           <img src="https://i.groupme.com/1500x1380.jpeg.589fa1e3d28c46d39206a97c6aa5d1b3" alt="" height="60px" width="60px">
+           <p style="margin: 10px; font-family: optima; font-variant: small-caps;">Virginia Threads Project</p>
+         </div>
+     </a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
        </button>
@@ -58,21 +80,21 @@
            </li>
 	   <li class="nav-item">
              <a class="nav-link" href="contact">Contact</a>
-           </li> 
+           </li>
            <!--
            <li class="nav-item">
              <a class="nav-link" href="give">Ways to Give</a>
-           </li> 
+           </li>
            -->
          </ul>
        </div>
      </nav>
 
      <div id="body" class="container py-3">
-       <h1>Welcome to the Virginia Threads Project!</h1>
-	<h2>About Us</h2>
+       <h1 style="font-family: optima;">Welcome to the Virginia Threads Project!</h1>
+	<h2 style="font-family: optima;">About Us</h2>
        <p>The Virginia Threads Project is a student-run organization at the University of Virginia and was founded in the summer of 2020. We are a diverse group of undergraduates from all four years who are pursuing many different areas of study.</p>
-	     <h3>Why We Created This Project</h3>
+	     <h3 style="font-family: optima;">Why We Created This Project</h3>
 		<p>We designed this project because we wanted to support early career faculty hires during future crises. These young professionals are the most diverse group in academia and reflect an increasingly more balanced gender distribution among faculty. However, they are most often subject to direct impacts in disasters, such as hiring freezes or hiring reductions. We wanted to give back to them after all they do for us, so they can continue doing what they love.</p>
     <br><br>
     <i>Although this organization has members who are University of Virginia students and may have University employees associated or engaged in its activities and affairs, the organization is not a part of or an agency of the University. It is a separate and independent organization, which is responsible for and manages its own activities and affairs. The University does not direct, supervise or control the organization and is not responsible for the organization’s contracts, acts or omissions.</i>
@@ -90,14 +112,14 @@
            <a href="contact" class="text-light">Contact</a>
            <!--
            <p class="text-light" style="display:inline">|</p>
-           <a href="give" class="text-light">Ways to Give</a> 
+           <a href="give" class="text-light">Ways to Give</a>
            -->
          </div>
        </footer>
    </div>
 
- 
-  
+
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
